@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-mongoose.connect('mongodb+srv://admin-deekshith:hellrider@cluster0-22hey.mongodb.net/articleDB', {
+mongoose.connect('mongodb+srv://admin-deekshith:<password>@cluster0-22hey.mongodb.net/articleDB', {
   useNewUrlParser: true, useUnifiedTopology: true});
 
 // mongoose.connect('mongodb://localhost:27017/wikiDB', {useNewUrlParser: true, useUnifiedTopology: true});
